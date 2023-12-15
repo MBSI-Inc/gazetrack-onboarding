@@ -1,0 +1,20 @@
+name: BCI-Gazetrack
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8
+  - dlib
+  - numpy
+  - scikit-learn
+  - scipy
+  - pip
+  - pip:
+      - joblib
+      - threadpoolctl
+      - opencv-python~=4.5
+      - matplotlib
+      - mediapipe
+      - autopep8
+      - pynput
+      - pyautogui
