@@ -1,8 +1,7 @@
-# Gazetracking - Onboarding 
+# Gazetracking - Onboarding
 
 ## Table of content
 
-- [Table of content](#table-of-content)
 - [Overview](#overview)
 - [Steps](#steps)
   - [Step 1: Install Conda](#step-1-install-conda)
@@ -19,7 +18,15 @@ todo...
 
 ### Step 1: Install Conda
 
-todo...
+You can either use `Anaconda`, which come with lots of packages for data science, or `Miniconda`, a lightweight version which only consist of necessary stuff. Personally, I recommended `Miniconda`.
+
+- <https://www.anaconda.com/download>
+
+- <https://docs.conda.io/projects/miniconda/en/latest/miniconda-install.html>
+
+Then you just install it, following the instructions show. Remember to add conda to system PATH so you can you them in command line.
+
+Use `conda list` in VScode terminal to see if it works.
 
 ### Step 2: Install dependencies
 
@@ -31,15 +38,15 @@ If you want to change the environment name, change the `name` attribute (1st lin
 
 ### Step 3: Activate conda env and test run
 
-In VsCode terminal, run `conda env list` to show the list of conda environment you have. It should show the * at the top, base environment.
+In VsCode terminal, run `conda env list` to show the list of conda environment you have. It should show the \* at the top, base environment.
 
-Then run `conda activate BCI-Gazetrack` (or different name if you changed it). Run `conda env list` again to confirm, the * should be at the same line as BCI-Gazetrack.
+Then run `conda activate BCI-Gazetrack` (or different name if you changed it). Run `conda env list` again to confirm, the \* should be at the same line as BCI-Gazetrack.
 
 ![Step 3 example img](example/step3.png "Step 3")
 
 Open the `step3.py` file to see if there are warnings about "cv2 can't resolve". You can open VsCode Command Pallete (Ctrl + Shift + P on Windows) and choose **Python: Select Interpreter**, then choose BCI-Gazetrack one.
 
-Run `python step3.py`. If your computer has a camera connected (hopefully), it will show you *a breathtaking sight*!
+Run `python step3.py`. If your computer has a camera connected (hopefully), it will show you _a breathtaking sight_!
 
 **Press Q to exit**. You can read a bit in the code to understand the minimal code to get OpenCV running.
 
@@ -53,7 +60,7 @@ Run `python step4.py`, and it should also open your camera with extra stuff draw
 
 ![Step 4 example img](example/step4.png "Step 4")
 
- Each or the vertices for this mesh called a landmark and has an id, which you can reference with `facemesh_landmark_ref` in `\res` folder. Zoom in real close and you will see the number.
+Each or the vertices for this mesh called a landmark and has an id, which you can reference with `facemesh_landmark_ref` in `\res` folder. Zoom in real close and you will see the number.
 
 ### Step 5: Locate the eye and iris
 
