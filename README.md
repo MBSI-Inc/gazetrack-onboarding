@@ -1,12 +1,27 @@
 # Gazetracking - Onboarding 
 
+## Table of content
+
+- [Table of content](#table-of-content)
+- [Overview](#overview)
+- [Steps](#steps)
+  - [Step 1: Install Conda](#step-1-install-conda)
+  - [Step 2: Install dependencies](#step-2-install-dependencies)
+  - [Step 3: Activate conda env and test run](#step-3-activate-conda-env-and-test-run)
+  - [Step 4: Mediapipe library](#step-4-mediapipe-library)
+  - [Step 5: Locate the eye and iris](#step-5-locate-the-eye-and-iris)
+
 ## Overview
 
-### Steps
+todo...
 
-#### Step 1: Install Conda
+## Steps
 
-#### Step 2: Install dependencies
+### Step 1: Install Conda
+
+todo...
+
+### Step 2: Install dependencies
 
 Run `conda env create -f environment.yml` at root folder.
 
@@ -14,7 +29,7 @@ If update existing env, use `conda env update --file environment.yml --prune`.
 
 If you want to change the environment name, change the `name` attribute (1st line) in `environment.yml`.
 
-#### Step 3: Activate conda env and test run
+### Step 3: Activate conda env and test run
 
 In VsCode terminal, run `conda env list` to show the list of conda environment you have. It should show the * at the top, base environment.
 
@@ -28,7 +43,7 @@ Run `python step3.py`. If your computer has a camera connected (hopefully), it w
 
 **Press Q to exit**. You can read a bit in the code to understand the minimal code to get OpenCV running.
 
-#### Step 4: Mediapipe library
+### Step 4: Mediapipe library
 
 [MediaPipe](https://github.com/google/mediapipe) is an open-source framework from Google for building pipelines to perform computer vision inference over arbitrary sensory data such as video or audio.
 
@@ -39,3 +54,11 @@ Run `python step4.py`, and it should also open your camera with extra stuff draw
 ![Step 4 example img](example/step4.png "Step 4")
 
  Each or the vertices for this mesh called a landmark and has an id, which you can reference with `facemesh_landmark_ref` in `\res` folder. Zoom in real close and you will see the number.
+
+### Step 5: Locate the eye and iris
+
+Next, we will see how to locate (and draw) the eyes and irises section on your face.
+
+Run `python step5.py`. You should get something like this (with Daqlan as cameo):
+
+![Step 5 example img](example/step5.png "Step 5")

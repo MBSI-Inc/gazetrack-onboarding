@@ -27,18 +27,17 @@ def main():
         success, frame = cam.read()
         if not success:
             print("Ignoring empty camera frame.")
-            # If loading a video, use 'break' instead of 'continue'.
             continue
 
         # To improve performance, optionally mark the frame as not writeable to
         # pass by reference.
         frame.flags.writeable = False
-        frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+        frame = cv2.cvtColor(frame, cv2.COLOR_RGB2BGR)
         results = face_mesh.process(frame)
 
         # Draw the face mesh annotations on the frame.
         frame.flags.writeable = True
-        frame = cv2.cvtColor(frame, cv2.COLOR_RGB2BGR)
+        frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
         if results.multi_face_landmarks:
             for face_landmarks in results.multi_face_landmarks:
                 # Draw the mesh of your face with thin grey light
@@ -69,7 +68,7 @@ def main():
                 )
                 
         # Flip the image horizontally for a selfie-view display.
-        cv2.imshow("MediaPipe Face Mesh", cv2.flip(frame, 1))
+        cv2.imshow("Step 4 Mediapipe", cv2.flip(frame, 1))
         if cv2.waitKey(1) & 0xFF == ord("q"):  
             break
 

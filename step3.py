@@ -20,11 +20,15 @@ def main():
     # This loop will run forever
     while True:
         # Fetch a frame image from camera
-        _, frame = cam.read()
+        success, frame = cam.read()
+        if not success:
+            print("Ignoring empty camera frame.")
+            continue
+        
         # Mirror the image
         frame = cv2.flip(frame, 1)
         # Show the frame on a new window called "Camera"
-        cv2.imshow("Camera", frame)
+        cv2.imshow("Step 3 Camera", frame)
 
         # Break the loop if user press Q
         if cv2.waitKey(1) & 0xFF == ord("q"):
