@@ -28,6 +28,8 @@ Then you just install it, following the instructions show. Remember to add conda
 
 Use `conda list` in VScode terminal to see if it works.
 
+In addition, it's recommended that you install Python extension to make thing easier. You can search for it on Market tab on VsCode, look for the one from Microsoft with the most download.
+
 ### Step 2: Install dependencies
 
 Run `conda env create -f environment.yml` at root folder.
