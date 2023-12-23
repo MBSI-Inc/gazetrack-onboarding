@@ -32,8 +32,11 @@ In addition, it's recommended that you install Python extension to make thing ea
 
 ### Step 2: Install dependencies
 
-There should be an environment.yml file already created for you in this repo, update the env, use `conda env update --file environment.yml --prune`.
-(if there's no .yml file, run `conda env create -f environment.yml` at root folder to create one)
+Remember to clone this directory, and move the current directory to it.
+
+There should be an environment.yml file already created for you in this repo, run `conda env create -f environment.yml` at root folder.
+
+To update the env, use `conda env update --file environment.yml --prune`.
 
 If you want to change the environment name, change the `name` attribute (1st line) in `environment.yml`.
 
@@ -70,3 +73,12 @@ Next, we will see how to locate (and draw) the eyes and irises section on your f
 Run `python step5.py`. You should get something like this (with Daqlan as cameo):
 
 ![Step 5 example img](example/step5.png "Step 5")
+
+
+### Step 6: Get iris to box ratio for direction
+
+By calculate the iris's x position compared to the eye bounding box, we can calculate whether the user is looking left, center or right (which should give direction ration from -1 to 1)
+
+In the output video, the 2 top number are gaze direction ratio for left and right eye. The bottom number is just the average, and the text show whenever you are loking left and right.
+
+![Step 6 example img](example/step6.png "Step 6")
