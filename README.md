@@ -32,9 +32,8 @@ In addition, it's recommended that you install Python extension to make thing ea
 
 ### Step 2: Install dependencies
 
-Run `conda env create -f environment.yml` at root folder.
-
-If update existing env, use `conda env update --file environment.yml --prune`.
+There should be an environment.yml file already created for you in this repo, update the env, use `conda env update --file environment.yml --prune`.
+(if there's no .yml file, run `conda env create -f environment.yml` at root folder to create one)
 
 If you want to change the environment name, change the `name` attribute (1st line) in `environment.yml`.
 
