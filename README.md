@@ -48,11 +48,11 @@ Then run `conda activate BCI-Gazetrack` (or different name if you changed it). R
 
 ![Step 3 example img](example/step3.png "Step 3")
 
-Open the `step3.py` file to see if there are warnings about "cv2 can't resolve". You can open VsCode Command Pallete (Ctrl + Shift + P on Windows) and choose **Python: Select Interpreter**, then choose BCI-Gazetrack one.
+Open the `step3.py` file to see if there are warnings about "cv2 can't resolve". You can open VsCode Command Pallete (Ctrl + Shift + P on Windows),then type and choose **Python: Select Interpreter**, then choose BCI-Gazetrack one.
 
 Run `python step3.py`. If your computer has a camera connected (hopefully), it will show you _a breathtaking sight_!
 
-**Press Q to exit**. You can read a bit in the code to understand the minimal code to get OpenCV running.
+**Press Q in openCV window to exit**. You can read a bit in the code to understand the minimal code to get OpenCV running.
 
 ### Step 4: Mediapipe library
 

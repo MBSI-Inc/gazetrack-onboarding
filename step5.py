@@ -112,10 +112,10 @@ def main():
             # Right eye
             draw_eye_contour(frame, landmarks, True)
 
-            # Flip the image horizontally for a selfie-view display.
-            cv2.imshow("Step 5 Eye contour", cv2.flip(frame, 1))
-            if cv2.waitKey(1) & 0xFF == ord("q"):  
-                break
+        # Flip the image horizontally for a selfie-view display.
+        cv2.imshow("Step 5 Eye contour", cv2.flip(frame, 1))
+        if cv2.waitKey(1) & 0xFF == ord("q"):  
+            break
 
     cv2.destroyAllWindows()
     cam.release()

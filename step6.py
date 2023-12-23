@@ -140,10 +140,10 @@ def main():
 
             frame = write_direction_on_frame(gaze_direction, frame)
 
-            # Flip the image horizontally for a selfie-view display.
-            cv2.imshow("Step 5 Eye contour", frame)
-            if cv2.waitKey(1) & 0xFF == ord("q"):  
-                break
+        # Flip the image horizontally for a selfie-view display.
+        cv2.imshow("Step 5 Eye contour", frame)
+        if cv2.waitKey(1) & 0xFF == ord("q"):  
+            break
 
     cv2.destroyAllWindows()
     cam.release()
