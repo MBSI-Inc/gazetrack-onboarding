@@ -74,7 +74,6 @@ Run `python step5.py`. You should get something like this (with Daqlan as cameo)
 
 ![Step 5 example img](example/step5.png "Step 5")
 
-
 ### Step 6: Get iris to box ratio for direction
 
 By calculate the iris's x position compared to the eye bounding box, we can calculate whether the user is looking left, center or right (which should give direction ration from -1 to 1)
@@ -82,3 +81,11 @@ By calculate the iris's x position compared to the eye bounding box, we can calc
 In the output video, the 2 top number are gaze direction ratio for left and right eye. The bottom number is just the average, and the text show whenever you are loking left and right.
 
 ![Step 6 example img](example/step6.png "Step 6")
+
+### Step 7: Head rotation
+
+Added `get_head_rotation()`
+
+Josh wrote this code so I have no idea what it does, but it calculate your head rotation / face direction angle so we can better estimate eye gaze direction
+
+![Step 7 example img](example/step7.png "Step 7")
