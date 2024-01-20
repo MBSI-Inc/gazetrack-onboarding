@@ -21,7 +21,7 @@ LEFT_IRIS_LANDMARKS = [474, 475, 476, 477]
 def get_numpy_points_from_landmarks(frame, landmarks, points_of_interest):
     # returns a (n, 2) numpy array of the coordinates of the n points of interest
     # This map the coordinate of landmarks to the coordination of frame
-    # For example, 0.4519 -> 578 for width
+    # For example, 0.4519 -> 578 for width (for a 1280 pixel width window)
     frame_h, frame_w, _ = frame.shape
     pts = []
     for i in points_of_interest:
