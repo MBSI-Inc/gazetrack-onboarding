@@ -14,7 +14,7 @@ dependencies:
       - threadpoolctl
       - opencv-python~=4.5
       - matplotlib
-      - mediapipe
+      - mediapipe==0.10.9
       - autopep8
       - pynput
       - pyautogui
