@@ -12,7 +12,7 @@
 
 ## Overview
 
-todo...
+Onboarding documents, programs, tutorials and stuff for Gaze Baes new friends!
 
 ## Steps
 
