@@ -9,6 +9,8 @@
   - [Step 3: Activate conda env and test run](#step-3-activate-conda-env-and-test-run)
   - [Step 4: Mediapipe library](#step-4-mediapipe-library)
   - [Step 5: Locate the eye and iris](#step-5-locate-the-eye-and-iris)
+  - [Step 6: Get iris to box ratio for direction](#step-6-get-iris-to-box-ratio-for-direction)
+  - [Step 7: Head rotation](#step-7-head-rotation)
 
 ## Overview
 
@@ -78,7 +80,7 @@ Run `python step5.py`. You should get something like this (with Daqlan as cameo)
 
 By calculate the iris's x position compared to the eye bounding box, we can calculate whether the user is looking left, center or right (which should give direction ration from -1 to 1)
 
-In the output video, the 2 top number are gaze direction ratio for left and right eye. The bottom number is just the average, and the text show whenever you are loking left and right.
+In the output video, the 2 top number are gaze direction ratio for left and right eye. The bottom number is just the average, and the text show whenever you are looking left and right.
 
 ![Step 6 example img](example/step6.png "Step 6")
 
