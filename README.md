@@ -42,9 +42,9 @@ If you want to change the environment name, change the `name` attribute (1st lin
 
 ### Step 3: Activate conda env and test run
 
-In VsCode terminal, run `conda env list` to show the list of conda environment you have. It should show the \* at the top, base environment.
+In VsCode terminal, run `conda env list` to show the list of conda environment you have. It should show the \* at the top, base environment. (If it not, try using a different terminal profile like Command Prompt, Git Bash,.. If it still still not show any asterisk up, just continue, some machine just don't show it).
 
-Then run `conda activate BCI-Gazetrack` (or different name if you changed it). Run `conda env list` again to confirm, the \* should be at the same line as BCI-Gazetrack.
+Then run `conda init` and restart the terminal. And then run `conda activate BCI-Gazetrack` (or different name if you changed it). Run `conda env list` again to confirm, the \* should be at the same line as BCI-Gazetrack.
 
 ![Step 3 example img](example/step3.png "Step 3")
 
